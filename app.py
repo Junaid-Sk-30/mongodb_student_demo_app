@@ -7,8 +7,8 @@ st.set_page_config(page_title='MongoDB Student Demo', page_icon='🎓', layout='
 # -----------------------------
 # MongoDB Connection
 # -----------------------------
-MONGO_URI = st.secrets["mongodb+srv://junaidsk3007_db_user:6A12NuYvHguIF3pz@cluster0.smnwx2j.mongodb.net/?appName=Cluster0"]
-client = MongoClient(MONGO_URI)
+MONGO_URI = "mongodb+srv://junaidsk3007_db_user:6A12NuYvHguIF3pz@cluster0.smnwx2j.mongodb.net/?appName=Cluster0"
+client = MongoClient[MONGO_URI]
 db = client['college_db']
 students = db['students']
 
